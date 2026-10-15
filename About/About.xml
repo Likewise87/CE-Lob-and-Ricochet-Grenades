@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>CE Lob and Ricochet Grenades</name>
+	<author>TSA</author>
+	<supportedVersions>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
+	<packageId>TSA.CE.LaR_Grenades</packageId>
+	<url>https://github.com/Likewise87/CE-Lob-and-Ricochet-Grenades</url>
+	<description>Choose grenade throw angle (CE Normal / 30° / 50° / 80° / Ricochet ~2°) to lob over walls or bank off them (up to 3 bounces). Color-coded aim preview shows clear vs blocked paths; fine-tune wall/roof clearance in mod settings. Includes stop after one throw.</description>
+	<modDependencies>
+		<li>
+			<packageId>CETeam.CombatExtended</packageId>
+			<displayName>Combat Extended</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044</steamWorkshopUrl>
+			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended/releases</downloadUrl>
+		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<incompatibleWith>
+		<!-- Duplicate stop-after-one Harmony patch if both loaded. Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3551039541 -->
+		<li>TSA.CE.StopAfterOneThrow</li>
+	</incompatibleWith>
+	<loadAfter>
+		<li>CETeam.CombatExtended</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData>
